@@ -87,23 +87,23 @@ Melihat jumlah makanan unik, jenis makanan, dan tipe vegetarian dalam data makan
 **Analisi Distribusi Data**
 notes : grafik **Jumlah Makanan berdasarkan Tipe** di notebook
 
-![image](https://github.com/user-attachments/assets/450f491b-7034-4cb1-a359-bc8cecbb2bb9)
+![image](https://github.com/user-attachments/assets/87bec07d-b065-4aaf-aa11-9f81ad051ea3)
 
 Grafik tersebut menunjukkan jumlah makanan berdasarkan tipe dalam dataset. Tipe makanan terbanyak adalah Indian dengan 88 makanan, diikuti oleh Healthy Food (58) dan Dessert (53). Sementara itu, beberapa kategori seperti Korean dan Spanish hanya memiliki 1 makanan, dengan duplikasi label Korean yang perlu dibersihkan..      
 
 notes : grafik **Jumlah Makanan berdasarkan Tipe Vegetarian** di notebook
 
-![image](https://github.com/user-attachments/assets/a8156924-5f85-4e18-872f-a5d22e8f07eb)
+![image](https://github.com/user-attachments/assets/114d9f75-f2a2-48fe-930f-9c18d1f7a435)
 
 Grafik menunjukkan jumlah makanan berdasarkan tipe vegetarian, dengan 238 makanan veg dan 162 non-veg. Ini menunjukkan bahwa makanan vegetarian lebih dominan.
 
 notes : grafik **Distribusi Rating** di notebook
 
-![image](https://github.com/user-attachments/assets/305c01e2-8b34-47e1-a644-2f5a688ac42d)
+![image](https://github.com/user-attachments/assets/131dc77b-4081-4b55-be00-2d735833e6ad)
 
 notes : grafik **Boxplot Rating** di notebook
 
-![image](https://github.com/user-attachments/assets/a0c41d70-8d7b-4343-a029-830121b902d7)
+![image](https://github.com/user-attachments/assets/d1c78875-8bfb-4631-b3f8-90b30b1ede9a)
 
 Grafik menunjukkan distribusi rating dari 1 hingga 10, dengan rating 3, 5, dan 10 memiliki jumlah terbanyak (63, 61, dan 61), sedangkan rating 8 paling sedikit (39). Distribusi rating tampak bervariasi dan tidak simetris. Berdasarkan grafik boxplot, tidak terdapat outlier, yang menunjukkan bahwa seluruh nilai rating berada dalam rentang yang wajar.
 
@@ -361,8 +361,7 @@ Keterangan:
 Hasil Metrik Evaluasi :
 notes : grafik **Training and Validation Mean Absolute Error (MAE)** di notebook
 
-![image](https://github.com/user-attachments/assets/667d5611-8284-4138-8500-00df081a056e)
-
+![image](https://github.com/user-attachments/assets/7f0f5616-d0fc-4818-a7a1-6fd3371ea1cd)
 
 Selama 16 epoch pelatihan, performa model pada data latih menunjukkan peningkatan signifikan, ditandai dengan penurunan loss dari 0.6914 ke 0.5484 dan MAE dari 0.2509 ke 0.0699. Ini menunjukkan model mampu mempelajari pola dengan baik. Namun, pada data validasi, penurunan MAE hanya terjadi di awal (dari 0.2434 ke 0.2395 hingga epoch 11), lalu stagnan hingga 0.2404 di epoch 16. Nilai loss validasi pun tidak menunjukkan perbaikan berarti sejak epoch ke-10. Pola ini mengindikasikan overfitting, di mana model terlalu menyesuaikan diri dengan data latih dan kurang mampu melakukan generalisasi terhadap data baru.
 
